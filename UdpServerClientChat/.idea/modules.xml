@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UdpChatServerTwo.iml" filepath="$PROJECT_DIR$/UdpChatServerTwo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UdpServerClientChat.iml" filepath="$PROJECT_DIR$/UdpServerClientChat.iml" />
     </modules>
   </component>
 </project>
