@@ -1,5 +1,8 @@
 import java.io.*;
 import java.net.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.*;
 
 public class ChatServer implements  Runnable {
@@ -40,7 +43,14 @@ public class ChatServer implements  Runnable {
                     client_addresses.add(clientAddress);
                 }
 
-                System.out.println(id + " : " + message);
+                String text = id + " : " + message;
+                System.out.println(text);
+
+                try {
+                    Files.write(Paths.get("History.txt"), text.getBytes(), StandardOpenOption.APPEND);
+                }catch (IOException e) {
+                }
+
                 byte[] data = (id + " : " + message).getBytes();
                 for (int i = 0; i < client_addresses.size(); i++) {
                     InetAddress cl_address = client_addresses.get(i);

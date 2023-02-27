@@ -6,6 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -43,6 +46,24 @@ public class ClientWindow extends JFrame {
         add(z, BorderLayout.SOUTH);
         add(fieldNickname, BorderLayout.NORTH);
 
+        try(FileReader reader = new FileReader("History.txt"))
+        {
+            StyledDocument doc = room_field.getStyledDocument();
+            char[] buf = new char[256];
+            int c;
+            while((c = reader.read(buf))>0){
+                if(c < 256){
+                    buf = Arrays.copyOf(buf, c);
+                }
+                String res = String.valueOf(buf);
+                doc.insertString(doc.getLength(),  res + "\n", null);
+            }
+        }
+        catch(IOException ex){
+            System.out.println(ex.getMessage());
+        } catch (BadLocationException e) {
+            throw new RuntimeException(e);
+        }
 
         setVisible(true);
         message_field.addKeyListener(new KeyListener() {
@@ -94,7 +115,4 @@ public class ClientWindow extends JFrame {
         return message;
     }
 
-    public String getPortName() {
-        return port_name;
-    }
 }
