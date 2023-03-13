@@ -1,0 +1,80 @@
+body {
+    background-color: #E6FADA;
+   
+}
+
+.topnav {
+  background-color: white;
+  max-width: 1450px;
+  overflow: hidden;
+  background-color: #E6FADA;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Poppins';
+  font-style: normal;
+}
+
+.topnav a.first {
+  margin-left: 15%;    
+}
+
+.topnav a.MarAll{
+    margin-top: 0.5%;
+}
+.topnav a.ModaMar {
+    margin-left: 5%;
+}
+
+.topnav a.shadowCat {
+    text-shadow: -4px 7px 2px rgba(44, 132, 145, 0.90);
+}
+
+.topnav a.shadowFash {
+    text-shadow: -4px 7px 2px rgba(55, 160, 53, 0.90);
+}
+
+.topnav a.shadowFav {
+   text-shadow: -4px 7px 2px rgba(193, 92, 209, 5);
+}
+
+.topnav a.shadowLife {
+    text-shadow: -4px 7px 2px rgba(255, 230, 97, 5);
+}
+
+.topnav a.Moda {
+    font-family: "Nova Slim";
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #ED9292;
+}
+
+.MyIconImage {
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-left: -3%;
+}
+
+.topnav button.Register {
+    margin-top: 1%;
+    padding: 10px 50px;
+    width: 160px;
+    height: 34px;
+    display: inline-block;
+    text-align: center;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    border-color: #e6e6e6;
+}
+
+
