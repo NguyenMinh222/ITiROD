@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css?family=Phetsarath&display=swap');
+
+body {
+    padding: 20px;
+    background-color: darkviolet;
+    background-color: #E6FADA;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.topnav {
+  width: 1400px;
+  height: 100px;
+  background-color: #E6FADA;
+  margin: 0 auto;
+}
+
+.content {
+  width: 1400px;
+    height: 560px;
+  background-color: white;
+    margin: 0 auto;
+}
+
+.textOne {
+    
+}
+
+.services {
+    text-align: center;
+    background-color: #E6FADA; 
+}
+
+.service {
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    background-color:#E6FADA ;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.service a {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+
+#catalogue{
+    width: 150px;
+    background-color: #E6FADA;
+    height: 25px;
+    border-right: 0px;
+}
+
+#fashion{
+    width: 150px;
+    background-color: #E6FADA;
+    height: 25px;
+    border-right: 0px;
+}
+
+#favourite{
+    width: 150px;
+    background-color: #E6FADA;
+    height: 25px;
+    border-right: 0px;
+}
+
+
+#lifestyle{
+    width: 150px;
+    background-color: #E6FADA;
+    height: 25px;
+    border-right: 0px;
+}
+
+.MyIconImage {
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-top: 8%;
+}
+.Moda{
+    width: 200px;
+    background-color: #E6FADA;
+    height: 85px;
+    border-right: 0px;
+    margin-right: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.service a.shadowCat {
+    text-shadow: -4px 7px 2px rgba(44, 132, 145, 0.90);
+}
+
+.service a.shadowFash {
+    text-shadow: -4px 7px 2px rgba(55, 160, 53, 0.90);
+}
+
+.service a.shadowFav {
+   text-shadow: -4px 7px 2px rgba(193, 92, 209, 5);
+}
+
+.service a.shadowLife {
+    text-shadow: -4px 7px 2px rgba(255, 230, 97, 5);
+}
+
+.service h1.ModaStyle {
+    font-family: "Nova Slim";
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #ED9292;
+}
+
+
+/* Для Article расположение их по горизонтали*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+
+article {
+    flex: 1 200px;
+}
+
+article:nth-of-type(3) {
+    flex: 2 200px;
+}
+
+
+img.styleForImageOne {
+     box-sizing: border-box;
+     background: url("girl.png");
+     font-size: 14px;
+     width: 332px;
+     height: 241px;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+     border-radius: 30px;
+     /*bottom: 30px; 
+     right: 80px;*/
+     position: absolute;
+     bottom: 10px;
+     right: 40px;
+    
+    
+}
+
+h1.SingIn {
+    font-family: 'Phetsarath', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 77px;
+    width: 594px;
+    height: 169.53px;
+    left: 101px;
+    top: -53px;
+    color: #000000;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.FirstArticle {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+
+p.SingIn {
+    font-family: 'Content';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 42px;
+    color: #14162E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 102px;
+    top: 130px;
+
+}
+
+p.LineHeight {
+    line-height: 120%;
+}
+
+h1.LineHeight {
+    line-height: 125%;
+}
+
+/*Для второго блока страницы входа*/
+
+h1.SectionText {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+.blockSign {
+    width: 400px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 0 auto;
+   
+}
+
+
+.buttonSign {
+    width: 400px;
+    height: 330px;
+    background-color: white; 
+    text-align: center;
+    
+
+}
+.InlineBlock {
+    width: 400px;
+    height: 58.92px;
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+          /*Значок гугла*/
+.GoogleSign {
+    /*position: absolute;*/
+    width: 110.91px;
+    height: 58.92px;
+    background-color: white;
+    /*bottom: 0;
+    left: 0;*/
+    box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.sizeOfGoogleSign {
+    width: 29px;
+    height: 29px;
+    background-color: black;  
+}
+
+   /*Значок Эппла*/
+
+.AppleSign {
+    /*position: absolute;*/
+    width: 110.91px;
+    height: 58.92px;
+    background-color: white;
+    box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sizeOfAppleSign {
+    width: 31px;
+    height: 31px;
+    background-color: coral;  
+}
+
+  /*Значок Фейсбука*/
+.FacebookSign {
+    width: 110.91px;
+    height: 58.92px;
+    background-color: white;
+    box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sizeOfFacebookSign {
+    width: 31px;
+    height: 31px;
+    background-color: greenyellow;  
+}
+
+a.RecoverPass {
+    font-family: 'Content';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 60px;
+    letter-spacing: 0.1em;
+    color: #C7C7C7;
+    left: 30%;
+    top: 0;
+    position: relative;
+    
+}
+
+.buttonSignIn {
+    height: 61.38px;
+    width: 400px;
+    background-color: #4461F2; 
+    border: none;
+    box-shadow: 0px 12px 21px 4px rgba(68, 97, 242, 0.15);
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Content';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 60px;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    position: relative;
+    top: 30px;
+}
+
+.buttonSignIn:hover {
+    background: linear-gradient(25deg, blue, #4461F2);
+}
+
+.buttonSignIn:active {
+     background: linear-gradient(25deg, #4461F2, blue);
+}
+
+p.Continue {
+    position: relative;
+    top: 18%;
+    color: #DFDFDF;
+}
+
+hr.firstLine { 
+  display: inline-block;
+  width: 100px;
+  margin-left: 0%;
+  margin-top: 8.5%;
+  border: 1px solid #DFDFDF;
+}
+
+hr.secondLine { 
+  display: inline-block;
+  width: 100px;
+  margin-left: 20%;
+  margin-top: 8.5%;
+  border: 1px solid #DFDFDF;
+}
+
+.EnterName {
+    width: 400px;
+    height: 80px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+     flex-wrap: wrap;
+}
+
+.EnterNameTwo {
+   position: relative;
+   width: 99%;
+   height: 70%;
+   font-size: 18px;
+   letter-spacing: 0.09em;
+   border: none;
+   outline: none;
+   background: #EAF0F7;
+   border-radius: 10px;
+   text-indent: 15px;
+}
+
+.Password {
+    width: 400px;
+    height: 80px;
+    background-color: navajowhite;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.EnterPasswordTwo {
+   position: relative;
+   width: 99%;
+   height: 70%;
+   font-size: 18px;
+   letter-spacing: 0.09em;
+   border: none;
+   outline: none;
+   background: #EAF0F7;
+   border-radius: 10px;
+   text-indent: 15px;
+}
+
+.contentMain {
+  width: 1100px;
+  height: 566px;
+  background-color: white;
+  border-radius: 25px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+}
+
+.MyPictureInDiv {
+  background-image: url("Images/fashion%20background.jpg");
+  background-size: cover; 
+  background-position: center; 
+  height: 566px; 
+  filter: contrast(95%);
+  filter: saturate(150%);
+}
+
+.EllipsePict {
+  width: 540px;
+  height: 540px;
+  border-radius: 50%/50%;
+  background-image: url("Images/Prada.jpg");
+  background-size: cover; 
+  background-position: center; 
+  filter: brightness(90%);
+  margin-left: 45%;
+}
+
+.whiteRectangle {
+   position: absolute;
+   width: 311px;
+   height: 74.56px;
+   margin-top: 50px;
+   margin-left: 50px;
+   transform: rotate(-2deg);
+   background-color: white;
+}
+
+.yellowRectangle {
+   position: absolute;
+   width: 331.77px;
+   height: 78.15px;
+   margin-top: 200px;
+   margin-left: 65px;
+   transform: rotate(-2deg);
+   background-color: #EBD96B;
+}
+
+p.LetsExp {
+    font-weight: 900;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-style: Black;
+    font-size: 45.6px;
+    line-height: 57px;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 75px;
+}
+
+p.LiveForInfl {
+    font-weight: 400;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 380px;
+    margin-left: 85px;
+    letter-spacing: -5%;
+}
+
+.forButtonShopNow {
+    position: absolute;
+    width: 105px;
+    height: 39px;
+    background-color: bisque;
+    margin-top: 470px;
+    margin-left: 90px;
+     border-radius: 5px;
+}
+
+.ShopNow {
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+    width: 105px;
+    height: 39px;
+     border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.ShopNow a{
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.ShopNow:hover {
+    background: linear-gradient(25deg, black, grey);
+}
+
+.ShopNow:active {
+    background: linear-gradient(25deg, grey, black);
+}
+

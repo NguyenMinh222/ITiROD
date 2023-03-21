@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="adaptive.css">
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="cardofproduct.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="catalogue.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <br/>
+        <div class="container">
+            <div class="topnav indent">
+                <div class="services">
+                    <div class="service">
+                        <div class="Moda">
+                            
+                            <h1 class="ModaStyle">Moda</h1>
+                            
+                            <picture>
+                               <img  class="MyIconImage" src="Images/consumption.png" alt="Misha">
+                            </picture>
+                            
+                            <div class="search">
+                              <form>
+                                <input type="text" placeholder="Искать здесь...">
+                                <button type="submit"></button>
+                              </form>  
+                            </div>
+                            
+                        </div>
+                        
+                        
+                       <div id="catalogue"  >
+                           <a class="shadowCat" href="#catalogue">CATALOGUE</a></div>
+                       <div id="fashion" >
+                           <a class="shadowFash" href="#fashion">FASHION</a></div>
+                       <div  id="favourite" >
+                           <a class="shadowFav" href="#favourite">FAVOURITE</a></div>
+                       <div  id="lifestyle">
+                           <a class="shadowLife" href="#lifestyle">LIFESTYLE</a>
+                       </div>
+                    
+                       <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+                        
+                       <label for="hmt" class="btn-menu">
+                       </label>
+                        
+                        <ul class="hidden-menu">
+                            <li><a href="">Личный кабинет</a></li>
+                            <li><a href="">Информация обо мне</a></li>
+                            <li><a href="">Моя корзина</a></li>
+                            <li><a href="">Мои заказы</a></li>
+                            <li><a href="">История покупок</a></li>
+                            <li><a href="">Мои товары</a></li>
+                            <li><a href="">Сообщения</a></li>
+                            <li><a href="">Выйти</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <br/>
+            
+            <div class="step indent">
+                <div class="containerCat">
+                    <ul class="styleStep">
+                       <li><a href="">Главная</a></li>
+                       <i class="fa-solid fa-angle-right"></i>
+                       <li><a href="">Каталог</a></li>
+                        <i class="fa-solid fa-angle-right"></i>
+                       <li><a href="">Пальто</a></li>
+                        <i class="fa-solid fa-angle-right"></i>
+                       <li><a href="">Черное пальто</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+               
+             <div class="contentCardProduct">
+                 
+                 <div class="childOne">
+                     <div class="miniImg"><img src="Images/2.webp"></div>
+                     <div class="miniImg "><img src="Images/3.webp"></div>
+                 </div>
+                 
+                 <div class="childTwo"><img src="Images/1.webp"></div>
+                 
+                 <div class="childThree">
+                     <div class="nameOfProduct">Черное пальто (Mango Man)</div>
+                     <div class="priceOfProduct">800 pyб</div>
+                     <!--<label for="size">Выберите размер:</label>-->
+                       <select id="size" name="size" >
+                          <option value="" disabled selected>Выберите размер</option>
+                          <option value="xs">XXL</option>
+                          <option value="xl">XL</option>
+                          <option value="l">L</option>
+                          <option value="m">M</option> 
+                      </select>
+                     
+                    <div class="description">Описание</div>
+                    <div style="border-bottom: solid 1px grey;"></div>
+                     
+                     <p>Пальто выполнено из драпа. Модель прямого кроя. Детали: застежка на пуговицы, 2 боковых кармана, отложной воротник с лацканами, внутри шелковистая подкладка. Изделия с отметкой Committed изготовлены с использованием экологичных волокон и/или устойчивых производственных процессов, что снижает негативное воздействие на окружающую среду. Mango продолжает поддерживать производственную практику, ориентированную на заботу об окружающей среде, увеличивая таким образом количество экологичных изделий в своих коллекциях.</p>
+                     
+                    <p class="Two">Состав:  Шерсть - 54%, Полиэстер - 37%, Акрил - 3%, Полиамид - 3%, Вискоза - 3%<br>
+                        Цвет:  Черный<br>
+                        Узор:  Однотонный<br>
+                        Карманы:  2<br>
+                        Капюшон:  Нет<br>
+                        Страна производства:  Камбоджа<br>
+                        Застежка:  Пуговицы<br>
+                        Артикул:  RTLABX612101</p>
+                     
+                     <button class="card__add">В корзину</button>
+                 </div>
+                 
+                 
+                 
+            </div>
+                
+            
+            
+        </div>  
+    </body>
+</html>

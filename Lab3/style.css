@@ -1,14 +1,35 @@
 body {
     background-color: #E6FADA;
-   
+
 }
 
 .topnav {
+  width: 1450px;
   background-color: white;
-  max-width: 1450px;
+  
   overflow: hidden;
   background-color: #E6FADA;
+  /*margin: 0px auto;
+  padding: 0px 15px;*/
 }
+
+/*@media (max-width: 1500px){
+    .topnav{
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 992px){
+    .topnav{
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px){
+    .topnav{
+        max-width: none;
+    }
+}*/
 
 .topnav a {
   float: left;
@@ -21,7 +42,7 @@ body {
 }
 
 .topnav a.first {
-  margin-left: 15%;    
+  margin-left: 10%;    
 }
 
 .topnav a.MarAll{

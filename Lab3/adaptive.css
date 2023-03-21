@@ -1,0 +1,99 @@
+
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+  .indent {
+    margin-bottom: 10px;
+  }
+ /*Адаптив для первого блока с девушкой*/ 
+  h1.SingIn {
+    top: -48px;
+    font-size: 45px;
+  }
+    
+    p.SingIn {
+    top: 100px;    
+    }
+    
+    /*Адаптив для категории*/
+    .carousel img{
+    width: calc(100% / 2);
+  }
+    
+    .search {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 812px) and (max-width: 1174px) {
+  .indent {
+    margin-bottom: 10px;
+  }
+    
+  h1.SingIn {
+    top: -40px;
+    font-size: 40px;
+  }
+    
+    p.SingIn {
+    top: 90px;    
+    }
+}
+
+/* отступы между блоками div на средних экранах */
+@media screen and (min-width: 481px) and (max-width: 805px) {
+  .indent {
+    margin-bottom: 30px;
+  }
+    h1.SingIn {
+    font-size: 30px;
+    left: 10px;
+    top: -20px;
+  }
+    
+    p.SingIn {
+    left: 10px;
+    top: 80px;    
+    }
+    
+    .carousel img{
+    width: 100%;
+  }
+    
+    .search {
+        display: block;
+    }
+}
+
+/* отступы между блоками div на малых экранах */
+@media screen and (max-width: 480px) {
+  .indent {
+    margin-bottom: 30px;
+  }
+  h1.SingIn {
+    font-size: 30px;
+    left: 10px;
+    top: -20px;
+  }
+    
+    p.SingIn {
+    left: 10px;
+    top: 80px;    
+    }
+    
+  .carousel img{
+    width: 100%;
+  }
+}
+
+/*Для картинки*/
+@media screen and (min-width: 390px) and (max-width: 890px)
+{
+    img.styleForImageOne {
+        right: auto;
+    }
+    
+    .search {
+        display: block;
+    }
+}
+
+

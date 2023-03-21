@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&family=Raleway:wght@300&display=swap');
+
+.contentCardProduct {
+    width: 100%;
+    height: 600px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.childOne {
+    width: 9%;
+    height: 575px;
+   /* background-color: aquamarine; */
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.childOne > .miniImg {
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: greenyellow;
+    margin-bottom: 10px;
+   
+}
+
+
+.miniImg  img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.childTwo {
+    width: 36%;
+    height: 575px;
+    background-color: salmon; 
+    margin: 10px 10px 10px 0;
+}
+.childTwo  img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.childThree {
+    width: 49%;
+    height: 555px;
+    background-color: white; 
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; 
+    padding: 10px;
+}
+
+.nameOfProduct {
+    font-family: 'Raleway';
+    line-height: 100%;
+    color: #252525;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    
+}
+
+.priceOfProduct {
+    font-family: 'Raleway';
+    line-height: 100%;
+    color: #252525;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+
+.childThree select {
+    width: 100%;
+    height: 50px;
+    border: 0.5px solid #252525;
+    margin-bottom: 20px;
+}
+
+option {
+    font-family: 'Raleway';
+    color:  #252525;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.description {
+    font-family: 'Raleway';
+    line-height: 100%;
+    color: #252525;
+    text-align: left;
+    font-size: 20px;
+}
+
+.childThree p{
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 800;
+}
+
+.childThree p.Two{
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 500;
+}
+
+
+.card__add {
+  display: block;
+  width: 40%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #70c05b;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+  cursor: pointer; 
+  transition: 0.2s;
+}
+
+.card__add:hover {
+  border: 1px solid #ff6633;
+  background-color: #ff6633;
+  color: #fff;
+}
