@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Home_Page.css">
+        <link rel="stylesheet" href="Catalogue_Page.css">
+        <link rel="stylesheet" href="Personal_Data.css">
+        <link href='https://fonts.googleapis.com/css?family=Nova Slim' rel='stylesheet'>
+        <link href="https://fonts.cdnfonts.com/css/phetsarath" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900;500&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Search-Menu.js" defer></script>
+        <script src="personaldata.js" defer></script>
+
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header class="">
+            <h1 class="logo-name">Moda</h1>
+            <img class="logo-image" src="Images/consumption.png" alt="logo-image">
+            <!--Переделать-->
+           
+            <div class="group">
+                <nav>
+                  <ul class="nav__links">
+                    <li><a class="catalogue__shadow" href="CataloguePage.html">CATALOGUE</a></li>
+                    <li><a class="fashion__shadow" href="#">FASHION</a></li>
+                    <li><a class="favourite__shadow" href="#">FAVOURITE</a></li>
+                    <li><a class="lifestyle__shadow" href="#">LIFESTYLE</a></li>
+                  </ul>
+
+                  <ul class="sub-menu">
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="Personal_Data.html">Информация обо мне</a></li>
+                    <li><a href="#">Моя корзина</a></li>
+                    <li><a href="MyOrdersPage.html">Мои заказы</a></li>
+                    <li><a href="#">История покупок</a></li>
+                    <li><a href="#">Мои товары</a></li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="LoginPage.html">Выйти</a></li>
+                  </ul>
+                </nav>
+                
+                <div class="search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="search-button"></ion-icon>
+                        <ion-icon name="close-outline" class="close-button"></ion-icon>
+                    </span>
+                </div>
+
+                <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+                
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search here...">
+            </div>
+        </header>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+
+        <div class="step">
+            <ul class="step__style">
+                <li><a href="">Главная</a></li>
+                <i class="fa-solid fa-angle-right"></i>
+                <li><a href="">Информация обо мне</a></li>
+             </ul>
+        </div>
+
+        <br/>
+
+        <td>
+            <table class="list" id="storeList">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Patronimyc</th>
+                        <th>E-mail</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>House number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+         </td>
+
+         <br/>
+
+     <form autocomplete="off">     
+        <div class="data">
+            <div class="data__text">
+                <img class="data__image" src="Images/PersonalData.png" >
+            </div>
+            <div class="data__icon">
+                <img src="Images/user-data.png" style="padding: 0 36px;" >
+            </div>
+            
+            <div class="data__inputs" >
+                <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name">
+                <input type="text" name="surname" class="form-control" id="surname" placeholder="Enter Surname">
+                <input type="text" name="patronimyc" class="form-control" id="patronimyc" placeholder="Enter Patronimyc">
+                <input type="text" name="email" class="form-control" id="email" placeholder="Enter E-mail">
+                <input type="number" name="phonenumber" class="form-control" id="phonenumber" placeholder="Enter phone number">
+            </div>
+       </div>   
+       
+       <br/>
+
+       <div class="address">
+           <div class="address__text">
+                <img class="address__image" src="Images/Address.png" >
+            </div>
+           <div class="address__icon">
+                <img src="Images/deliver.png" style="padding: 0 50px;" >
+            </div>
+           <div class="address__inputs" >
+                <input type="text" name="address" class="form-control" id="address" placeholder="Address">
+                <input type="number" name="housenumber" class="form-control" id="housenumber" placeholder="Number of house">
+            </div>
+       </div>
+       <br/>
+
+       <div class="form_action--button">
+          <input class="button" id="Submit" type="submit" value="Submit" onclick="AddData()">
+          <input class="button" id="Update" type="submit" value="Update">
+          <input class="button" type="reset" value="Reset" onclick="resetData()">
+       </div>
+     </form> 
+     
+     
+
+       
+    </body>
+</html>

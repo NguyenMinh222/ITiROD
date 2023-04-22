@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Welcome_Page.css">
+        <link rel="stylesheet" href="Login_Page.css">
+        <link href='https://fonts.googleapis.com/css?family=Nova Slim' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="sweetalert.js" defer></script>
+        <script src="Login.js" defer></script>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta charset="utf-8">
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo-name">Moda</h1>
+            <img class="logo-image" src="Images/consumption.png" alt="logo-image">
+            <nav>
+                <ul class="nav__links">
+                    <li><a class="catalogue__shadow" href="#">CATALOGUE</a></li>
+                    <li><a class="fashion__shadow" href="#">FASHION</a></li>
+                    <li><a class="favourite__shadow" href="#">FAVOURITE</a></li>
+                    <li><a class="lifestyle__shadow" href="#">LIFESTYLE</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="content-login">
+            <article class="content-login__first-article" style="position: relative;">
+                <h1 class="first-article__heading-text" style="position: absolute" >Sign In to start use <br>our shop website</h1>
+                     <!-- Текст над картинкой -->
+                <img class="first-article__image" src="Images/girl.png" alt="Girl" >   
+                <p class="first-article__main-text" style="position: absolute">if you don’t have  an account<br> you can<br> <a class="main-text__register" href="RegisterPage.html">Register here!</a></p>                
+            </article>
+<!-- Второй блок -->
+            <article>
+                <div class="block" style="position: relative;">
+                    
+                    <div class="block__enter-name" >
+                         <input id="enter_email" class="block__enter-name-two" type="text"  placeholder="Enter Email" onkeydown="validation()" required>
+                         <span id="text"></span>
+                    </div>
+                                
+                    <div class="block__password" >
+                          <input id="enter_password" class="block__enter-password" type="password" id="enter_password" placeholder="Enter Password....." required>
+                          <span class="close-eye"><i class="fa fa-eye-slash" aria-hidden="true" id="closeeye" onclick="toggle()"></i></span>
+                    </div>
+                                
+                            
+                        <!-- Третий мини-блок -->
+                    <div class="block-buttons">
+                        <a class="block-buttons__recovery-password" href="RecoverPassword">Recover Password?</a>
+                      
+                        <button  class="block-buttons__button-sing-in login" >Sing In</button>
+                                   
+                        <p class="block-buttons__continue">Or continue</p>
+                                     
+                        <hr class="block-buttons__first-line">
+                        <hr class="block-buttons__second-line">
+                    
+                                    
+                    <div class="block-buttons__inline-block">
+                                    
+                         <!-- GoogleSign -->
+                        <button onclick="signIn()" class="inline-block__google-sign">
+                             <div class="google-sign__size">
+                                 <img class="google-sign__size" src="Images/googleIcon.png" alt="googleSign">
+                             </div>
+                        </button>
+                                    <!-- AppleSign -->
+                         <div  class="inline-block__apple-sign">
+                             <div class="apple-sign__size">
+                                  <img class="apple-sign__size" src="Images/Appleicon.png" alt="appleSign">
+                             </div>
+                         </div>
+                                     
+                               <!-- Facebook Sign--> 
+                        <div class="inline-block__facebook-sign">
+                             <div class="facebook-sign__size">
+                                 <img class="facebook-sign__size" src="Images/FacebookIcon.png" alt="facebookSign">
+                             </div>
+                        </div>
+                                        
+                       </div>    
+                 </div>                              
+                </div>
+                           
+            </article>
+        </section>
+        <button onclick="signIn()">Sign In With Google</button>
+    </body>
+    <script src="googleSignIn.js"></script>
+</html>
+
+<!-- 336891376138-it9755rps1mu8rtoghk9cd2rsrip5qbj.apps.googleusercontent.com -->

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&family=Raleway:wght@300&display=swap');
+
+.step {
+    width: auto;
+    height: 60px;
+    background-color: antiquewhite;
+    margin-left: 4%;
+    background-color: #E6FADA;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.step__style {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 20px;
+}
+
+.step__style li  {
+    display: inline-block;
+}
+
+.step__style li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Raleway';
+}
+
+.sidebar {
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    background-color: #E6FADA;  
+}
+
+.navigation-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+ }
+ 
+ .navigation-list li {
+     margin-bottom: 25px;
+ }
+ 
+ .navigation-list a{
+     text-decoration: none;
+     color: black;
+     font-size: 16px;
+     font-family: 'Raleway';
+ }
+ 
+ .navigation-title {
+     font-family: 'Raleway';
+ }
+ 
+
+ .content {
+    width: 85%;
+    height: 500px;
+    float: right;
+    /*background-color: white;*/
+    background-color: #E6FADA;
+}
+
+ .sidebar, content {
+    display: inline-block;
+    vertical-align: top;  
+    box-sizing: border-box; 
+    padding: 10px; 
+    margin-left: 5%;
+}
+
+@media (max-width: 760px) {
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 75%; 
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 30px; /* Отступ между колонками */
+    /*Сделать с этим адаптив*/
+    row-gap: 40px; /* Отступ между рядами */
+    margin: 0 auto;
+    margin-top: 3%;
+  
+  }
+  
+  /*Карточка продукта*/
+  .card {
+    width: 225px;
+    max-height: 100px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  
+  /* При наведении на карточку - меняем цвет тени */
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+  }
+  
+  .card__top {
+    flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+    position: relative;
+    overflow: hidden; 
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+  }
+  
+  /* Контейнер для картинки */
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+    transition: 0.2s;
+  }
+  
+  /* При наведении - увеличиваем картинку */
+  .card__image:hover > img {
+    transform: scale(1.1);
+  }
+  
+  /* Размещаем скидку на товар относительно изображения */
+  .card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #ff6633;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; 
+    padding: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+  }
+  
+  .card__prices {
+    display: flex;
+    margin-bottom: 10px;
+    flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+  }
+  
+  .card__title {
+    font-family: 'Raleway';
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+  }
+  .card__price {
+      font-family: 'Raleway';
+      line-height: 150%;
+      color: #252525;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 900;
+  }
+  
+  .card__size {
+      
+      line-height: 150%;
+      font-size: 19px;
+      color: rgba(37, 37, 37, 0.5);
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  
+  .card__title:hover {
+    color: #ff6633;
+  }
+  
+  @media (max-width: 1050px) {
+    .cards {
+      margin: 50px -28px;
+    }
+    .cards {
+      column-gap: 10px;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .cards {
+      margin: 50px -28px;
+      max-width: 70%;
+    }
+
+    .cards {
+      column-gap: 10px;
+   
+    }
+  }
+
+  @media (max-width: 700px) {
+    .cards {
+      margin: 50px -28px;
+      max-width: 65%;
+    }
+
+    .cards {
+      column-gap: 30px;
+      row-gap: 230px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .cards {
+      margin: 50px 55px;
+      margin-left: 0;
+      max-width: 65%;
+    }
+
+    .cards {
+      column-gap: 30px;
+      row-gap: 230px;
+
+    }
+
+    .sidebar, content {
+      margin-left: 25%;
+  }
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custome css  -->
+    <link rel="stylesheet" href="./Register_Page.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="main-parent">
+        <div class="form-wrap">
+            <form id="form" action="">
+                <h1><span>Registration</span></h1>
+                <div class="single-input">
+                    <input id="first-name" type="text" placeholder="First name" required>
+                </div>
+                <div class="single-input">
+                    <input id="last-name" type="text" placeholder="Last name" required>
+                </div>
+                <div class="single-input">
+                    <input id="email" type="email" placeholder="Email Address" onkeydown="validation()" required>
+                    <span id="text"></span>
+                </div>
+                <div class="single-input">
+                    <input id="password" type="password" placeholder="Password" required>
+                    <span class="close-eye"><i class="fa fa-eye-slash" aria-hidden="true" id="closeeye" onclick="toggle()"></i></span>
+                </div>
+                <div class="single-input">
+                    <input id="confirm-password" type="password" placeholder="Confirm Password" required>
+                    <span class="close-eye"><i class="fa fa-eye-slash" aria-hidden="true" id="closeeye_confirm" onclick="toggle_confirm()"></i></span>
+                </div>
+                <div class="submit-button">
+                    <button class="button">Submit</button>
+                </div>
+                <div class="account-have">
+                    <a href="">Forget Password</a>
+                    <a href="LoginPage.html">Have an account please Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./sweetalert.js"></script>
+    <script src="./Register.js"></script>
+</body>
+</html>

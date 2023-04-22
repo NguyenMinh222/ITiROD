@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Phetsarath&display=swap');
+
+
+
+* header, div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-color: #E6FADA;
+}
+
+body {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+    background-color: darkviolet;
+    background-color: #E6FADA;
+}
+
+li, a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+}
+
+.logo-image {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo-name {
+    cursor: pointer;
+    font-family: "Nova Slim";
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #ED9292;
+}
+
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: antiquewhite;
+}
+
+.catalogue__shadow {
+    text-shadow: -4px 7px 2px rgba(44, 132, 145, 0.90);
+}
+
+.fashion__shadow {
+    text-shadow: -4px 7px 2px rgba(55, 160, 53, 0.90);
+}
+
+.favourite__shadow {
+   text-shadow: -4px 7px 2px rgba(193, 92, 209, 5);
+}
+
+.lifestyle__shadow {
+    text-shadow: -4px 7px 2px rgba(255, 230, 97, 5);
+}
+
+.content {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color:burlywood;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.content__background {
+  background-image: url("Images/fashion%20background.jpg");
+  background-size: cover; 
+  background-position: center; 
+  height: 566px; 
+  filter: contrast(95%);
+  filter: saturate(150%);
+}
+
+.content__first-block {
+    width: 45%;
+    height: 100%;
+}
+
+.content__second-block {
+  width: 540px;
+  height: 540px;
+  border-radius: 50%/50%;
+  background-image: url("Images/Prada.jpg");
+  background-size: cover; 
+  background-position: center; 
+  filter: brightness(90%);
+ 
+}
+
+.content-first-block__white-rectangle {
+   position: absolute;
+   width: 311px;
+   height: 74.56px;
+   margin-top: 50px;
+   margin-left: 50px;
+   transform: rotate(-2deg);
+   background-color: white;
+}
+
+.content-first-block__yellow-rectangle {
+   position: absolute;
+   width: 331.77px;
+   height: 78.15px;
+   margin-top: 200px;
+   margin-left: 65px;
+   transform: rotate(-2deg);
+   background-color: #EBD96B;
+}
+
+p.content-first-block__text-one {
+    font-weight: 900;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-style: Black;
+    font-size: 45.6px;
+    line-height: 57px;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 75px;
+}
+
+.button {
+    position: absolute;
+    width: 105px;
+    height: 39px;
+    background-color: bisque;
+    margin-top: 470px;
+    margin-left: 90px;
+    border-radius: 5px;
+}
+
+.button__shop-now {
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+    width: 105px;
+    height: 39px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.button__shop-now a{
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.button__shop-now:hover {
+    background: linear-gradient(25deg, black, grey);
+}
+
+.button__shop-now:active {
+    background: linear-gradient(25deg, grey, black);
+}
+
+
+.content-first-block__text-two {
+    font-weight: 400;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 380px;
+    margin-left: 85px;
+    letter-spacing: -5%;
+}
+
+@media (max-width: 1060px) {
+    .content__second-block {
+        width: 440px;
+        height: 440px;
+      } 
+}
+
+@media (max-width: 948px) {
+    .logo-name {
+      margin-left: 35%;
+    }
+    .content__second-block {
+        width: 340px;
+        height: 340px;
+    }
+
+    .nav__links li {
+        display: inline-block;
+        padding: 0px 35px;
+    }
+}
+
+@media (max-width: 873px) {
+    .content__second-block {
+        display: none;
+    }  
+    .nav__links li {
+        display: inline-block;
+        padding: 10px 35px;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width:470px){
+    .content__second-block {
+        display: none;
+      } 
+    p.content-first-block__text-one {
+        margin-left: 15px;
+    }
+    .content-first-block__white-rectangle {
+        margin-left: 0px;
+    }
+
+    .content-first-block__yellow-rectangle {
+        margin-left: 10px;
+
+    }
+    .content-first-block__text-two {
+        margin-left: 5px;
+    }
+
+    .content{
+        overflow: hidden;
+    }
+    .logo-name {
+        margin-left: 30%;
+    }
+    .nav__links li {
+        display: inline-block;
+        padding: 10px 70px;
+    }
+}
+

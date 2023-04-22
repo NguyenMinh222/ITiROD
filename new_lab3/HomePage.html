@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Home_Page.css">
+        <link href='https://fonts.googleapis.com/css?family=Nova Slim' rel='stylesheet'>
+        <link href="https://fonts.cdnfonts.com/css/phetsarath" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900;500&display=swap" rel="stylesheet">
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header class="">
+            <h1 class="logo-name">Moda</h1>
+            <img class="logo-image" src="Images/consumption.png" alt="logo-image">
+            <!--Переделать-->
+           
+            <div class="group">
+                <nav>
+                  <ul class="nav__links">
+                    <li><a class="catalogue__shadow" href="CataloguePage.html">CATALOGUE</a></li>
+                    <li><a class="fashion__shadow" href="#">FASHION</a></li>
+                    <li><a class="favourite__shadow" href="#">FAVOURITE</a></li>
+                    <li><a class="lifestyle__shadow" href="#">LIFESTYLE</a></li>
+                  </ul>
+
+                  <ul class="sub-menu">
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="Personal_Data.html">Информация обо мне</a></li>
+                    <li><a href="#">Моя корзина</a></li>
+                    <li><a href="MyOrdersNew.html">Мои заказы</a></li>
+                    <li><a href="#">История покупок</a></li>
+                    <li><a href="#">Мои товары</a></li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="LoginPage.html">Выйти</a></li>
+                  </ul>
+                </nav>
+
+                <div class="search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="search-button"></ion-icon>
+                        <ion-icon name="close-outline" class="close-button"></ion-icon>
+                    </span>
+                </div>
+
+                <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+        </header>
+        <script src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        -->
+        <script>
+            let searchBtn = document.querySelector('.search-button');
+            let closeBtn = document.querySelector('.close-button');
+            let searchBox = document.querySelector('.search-box');
+            let nav__links = document.querySelector('.nav__links');
+            let menuToggle = document.querySelector('.menu-toggle');
+            let header = document.querySelector('header');
+            let subMenu = document.querySelector('.sub-menu');
+
+            searchBtn.onclick = function() {
+                searchBox.classList.add('active');
+                closeBtn.classList.add('active');
+                searchBtn.classList.add('active');
+                menuToggle.classList.add('hide');
+                header.classList.remove('open');
+
+                let imageContainer = document.querySelector('.image-container');
+
+                if (header.classList.contains('open')) {
+                    imageContainer.style.marginTop = '100px'; 
+                } else {
+                    imageContainer.style.marginTop = '0';
+                }
+            };
+            closeBtn.onclick = function() {
+                searchBox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            };
+            
+            menuToggle.onclick = function(){
+                header.classList.toggle('open');
+                searchBox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+
+                let imageContainer = document.querySelector('.image-container');
+                
+                if (header.classList.contains('open')) {
+                    if (window.matchMedia("(max-width: 1040px)").matches){
+                        imageContainer.style.marginTop = '370px'; 
+                    }
+                    else {
+                        imageContainer.style.marginTop = '250px';
+                    }
+                    
+                } else {
+                    imageContainer.style.marginTop = '0';
+                }
+            };
+
+        </script>
+        
+        <div class="image-container">
+            <div><img src="Images/little%20girl.jpg"></div>
+            <div><img src="Images/brutal%20men.jpg"></div>
+            <div><img src="Images/model.jpg"></div>
+            <p class="image-container__new-collections">New<br>collections</p>
+        </div>
+        
+        <br/><br/>
+        <!--Подумать над section-->
+        <div class="category-block category-block__wall">  
+             
+           <section class="product">
+               <button class="pre-btn"><img src="Images/free-icon-arrow-right-3106679.png" alt=""></button>
+               <button class="nxt-btn"><img src="Images/free-icon-arrow-right-3106679.png" alt=""></button>
+               <div class="product-container">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/girlInWhite.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Куртки</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/coat.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Пальто</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/kofta.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Кофты</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/hudi.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Худи</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/kofta.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-short-description">Худи</p>
+                    </div>
+                </div>
+
+               </div>
+            </section>
+        
+            <div class="category-block__yellow-ractangle">
+                <img src="Images/category.png">
+            </div>
+
+        </div>
+        <script src="swiper.js"></script>
+    </body>
+</html>

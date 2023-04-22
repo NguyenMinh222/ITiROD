@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&family=Raleway:wght@300&display=swap');
+
+
+.data {
+    position: relative;
+    width: auto;
+    height: 500px;
+    background-image: url("Images/shopping.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.data > .data__text {
+    width: auto;
+    height: 80px;
+}
+
+.data__image {
+   float: left;
+   padding: 30px 50px;
+}
+
+.data__icon {
+    position: absolute;
+    left: 0;
+    width: 14%;
+    height: 420px;
+    /*background-color: aqua;*/
+}
+
+
+.data__inputs {
+    width: 85%;
+    height: 420px;
+   /* background: red; */
+    right: 0;
+    position: absolute;
+}
+
+.address__inputs {
+    width: 85%;
+    height: 200px;
+    right: 0;
+    position: absolute;
+}
+
+.data__inputs input {
+    font-family: 'Raleway';
+    display: inline-block;
+    vertical-align: top;  
+    width: 350px;
+    height: 40px;
+    margin: 0 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    letter-spacing: 0.09em;
+    text-indent: 15px;
+    outline: none;
+    font-variant-numeric: proportional-nums lining-nums;  
+}
+
+.address__inputs input {
+    font-family: 'Raleway';
+    display: inline-block;
+    vertical-align: top;  
+    width: 350px;
+    height: 40px;
+    margin: 0 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    letter-spacing: 0.09em;
+    text-indent: 15px;
+    outline: none;
+}
+.address {
+    position: relative;
+    width: auto;
+    height: 300px;
+    background-image: url("Images/shopping%20girl.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.address__text {
+    width: auto;
+    height: 80px;
+}
+
+.address__image {
+   float: left;
+   padding: 30px 50px;
+}
+
+.address__icon {
+    position: absolute;
+    left: 0;
+    width: 14%;
+    height: 100px;
+    
+}
+
+.button {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border: none;
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {  background: rgb(53, 167, 110); }
+button:active {  background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset; 
+}
+
+.form_action--button{
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin: 40px auto;
+    background: #E6FADA;
+}
+
+table.list {
+    text-align: center;
+    width: 100%;
+}
+
+td {
+    /*border: 1px solid rgba(205,220,57,0.7);*/
+    border: 1px solid rgb(252, 252, 252);
+    text-align: center;
+    padding: 8px, 15px;
+}
+
+th {
+    border: 1px solid rgb(252, 252, 252);
+}
+
+#Update {
+    display: none;
+}
+@media (max-width: 1120px){
+    .data {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 950px){
+    .data {
+        height: 600px;
+    }
+
+    .address__inputs {
+        right: -10%;
+    }
+    .data__inputs {
+        right: -10%;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width: 600px){
+    .data {
+        height: 700px;
+    }
+
+    .address {
+    height: 400px;
+    }
+
+    .address__inputs {
+        right: 5%;
+        top: 40%;
+
+    }
+    .data__inputs {
+        right: 5%;
+        top: 25%;
+    }
+
+    .data__icon {
+        left: 31%;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 500px){
+    .data {
+        height: 700px;
+    }
+
+    .address {
+    height: 400px;
+    }
+
+    .address__inputs {
+        right: 20%;
+        top: 40%;
+
+    }
+    .data__inputs {
+        right: 20%;
+        top: 25%;
+    }
+
+    .data__icon {
+        left: 20%;
+    }
+}
+
+@media screen and (min-width:390px) and (max-width: 450px){
+    .data {
+        height: 700px;
+    }
+
+    .address {
+    height: 400px;
+    }
+
+    .address__inputs {
+        right: 20%;
+        top: 40%;
+
+    }
+
+    .data__inputs {
+        right: 20%;
+        top: 25%;
+    }
+
+    .data__icon {
+        left: 20%;
+    }
+
+    .data__inputs input {
+        width: 300px;
+    }
+
+    .address__inputs input {
+        width: 300px;
+
+    }
+}

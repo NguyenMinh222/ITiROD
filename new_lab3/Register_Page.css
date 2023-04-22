@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Phetsarath&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: "Open Sans",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main-parent
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #E6FADA;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-parent .form-wrap
+{
+    width: 450px;
+    background: rgb(255 255 255 / 75%);
+    border-radius: 10px;
+    padding: 35px 40px;
+    backdrop-filter: blur(5px);
+}
+.form-wrap form h1
+{
+    font-family: 'Acme', sans-serif;
+    font-variant: small-caps;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.form-wrap form h1 span
+{
+    font-family: 'Phetsarath', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #000000;
+    text-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
+    line-height: 125%;
+}
+.form-wrap form .single-input {
+    position: relative;
+}
+
+.form-wrap form .single-input input
+{
+   
+    width: 100%;
+    padding: 14px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3521);
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.form-wrap form .submit-button
+{
+    text-align: center;
+}
+.form-wrap form .submit-button button.button
+{
+    padding: 13px 30px;
+    background-color: #32f125;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+.form-wrap form .submit-button button.button:active {
+    background-color: #E6FADA;
+}
+
+.form-wrap form .submit-button button.button:hover{
+    background-color: black ;
+}
+
+.form-wrap form .account-have
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.form-wrap form .account-have a
+{
+    color: rgb(53, 121, 211);
+}
+
+.close-eye{
+    position: absolute;
+    right: 15px;
+    transform: translate(0, -50%);
+    top: 40%;
+    cursor: pointer;
+}
+
+.fa {
+    font-size: 20px;
+    color: #7a797e;
+}
+
+#text {
+   
+    color: #000;
+    font-weight: 300;
+    padding: 5px;
+    margin-bottom: 5px;
+}
